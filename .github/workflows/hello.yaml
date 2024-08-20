@@ -26,6 +26,6 @@ jobs:
         run: echo "Job Success"
  
       - name: The Job has failed?
-      f: ${{ failure() }}
+        if: ${{ failure() }}
         run: echo "Job Fails"
         
